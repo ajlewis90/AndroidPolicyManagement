@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/storePermissions"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:paddingLeft="24dp"
+            android:text="Store Permissions" />
+
+        <Button
+            android:id="@+id/editPolicyType"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/storePermissions"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Edit Policy Types" />
+
+        <Button
+            android:id="@+id/viewApps"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editPolicyType"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="View Installed Applications" />
+
+        <Button
+            android:id="@+id/viewPolicyInstances"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/viewApps"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="View Policy Instances" />
+
+        <Button
+            android:id="@+id/viewPolicyTypes"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/viewPolicyInstances"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="View Policy Types" />
+        
+    </RelativeLayout>
+
+</ScrollView>

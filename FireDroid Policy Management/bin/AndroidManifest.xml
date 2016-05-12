@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ibc.android.demo.appslist.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:name="com.ibc.android.demo.appslist.app.AppData"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.ApkInfo"
+            android:label="@string/title_activity_apk_list" >
+            <intent-filter>
+                <action android:name="android.intent.action.APKINFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.ViewPermissions"
+            android:label="@string/title_activity_permissions_view" >
+        </activity>
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.FireDroidPolicyManagement"
+            android:label="@string/title_activity_home" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.ApplicationList"
+            android:label="@string/title_activity_apk_list" >
+            <intent-filter>
+                <action android:name="android.intent.action.APPSLISTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ibc.android.demo.appslist.policies.PolicyTypeList"
+            android:label="@string/PolicyType" >
+            <intent-filter>
+                <action android:name="android.intent.action.POLICYTYPELIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.PolicyInstances"
+            android:label="@string/title_activity_policy_instances" >
+            <intent-filter>
+                <action android:name="android.intent.action.POLICYINSTANCESACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.PolicyTypeDefinition"
+            android:label="@string/title_activity_policy_type_definition" >
+            <intent-filter>
+                <action android:name="android.intent.action.POLICYTYPEDEFINITION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.ViewPolicyTypes"
+            android:label="@string/title_activity_view_policy_types" >
+        </activity>
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.EditPolicyTypes"
+            android:label="@string/title_activity_edit_policy_types" >
+        </activity>
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.PolicyTypesList"
+            android:label="@string/title_activity_policy_types_list" >
+        </activity>
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.ViewAppPolicyInstances"
+            android:label="@string/title_activity_view_policy_instances" >
+        </activity>
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.ViewPolicyInstances"
+            android:label="@string/title_activity_view_policy_instances" >
+        </activity>
+    </application>
+
+</manifest>

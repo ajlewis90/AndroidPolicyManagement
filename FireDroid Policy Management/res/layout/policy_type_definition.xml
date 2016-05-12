@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/polName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/policy_name_textview"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/policyName_textView"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/polName"
+            android:layout_marginLeft="18dp"
+            android:paddingLeft="24dp"/>
+
+        <TextView
+            android:id="@+id/defOutcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/policyName_textView"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/default_outcome_textview"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/defOutcome_spinner"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/defOutcome"
+            android:layout_marginLeft="18dp"
+            android:entries="@array/default_outcome_array"
+            android:paddingLeft="24dp"
+            android:prompt="@string/default_outcome_prompt" />
+
+        <!--
+            <EditText
+            android:id="@+id/defOutcome_EditText"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/defOutcome"
+            android:layout_marginLeft="18dp" 
+            android:paddingLeft="24dp"
+            android:inputType="text"/>
+        -->
+
+        <TextView
+            android:id="@+id/priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/defOutcome_spinner"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/priority_textview"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/priority_spinner"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priority"
+            android:layout_marginLeft="18dp"
+            android:paddingLeft="24dp"
+            android:entries="@array/priority_array"
+            android:prompt="@string/priority_prompt" />
+		
+        <Button
+            android:id="@+id/add_policyType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priority_spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="24dp"
+            android:gravity="center"
+            android:text="@string/add_policy_type" />
+        
+         <Button
+            android:id="@+id/backToPolicyTypeList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_policyType"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="24dp"
+            android:gravity="center"
+            android:text="@string/BackToPolicyTypeList" />
+        
+      
+    </RelativeLayout>
+
+</ScrollView>
